@@ -5,7 +5,7 @@ const isObject = (obj) => {
 const deepEqual = (a, b) => {
   if (isObject(a) && isObject(b)) {
     // deep comparison
-    const aProps = Object.keys(a), bProps = Object.keys(a)
+    const aProps = Object.keys(a), bProps = Object.keys(b)
     if (aProps.length != bProps.length) return false
     for (let prop in a) {
       if (!bProps.includes(prop)) return false
